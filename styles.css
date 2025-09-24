@@ -32,6 +32,26 @@ body {
 .lead { font-size: clamp(18px, 2.2vw, 20px); margin: 0 0 10px; }
 .muted { color: #6b7280; margin: 0 0 22px; }
 
+/* 製作者リスト（モバイル1列 → 画面幅に応じて2〜3列） */
+.authors {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
 /* 上に戻るボタン */
 #backToTop {
   position: fixed; right: 18px; bottom: 18px; z-index: 60;
