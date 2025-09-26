@@ -149,9 +149,19 @@ a:hover { text-decoration: underline; }
   border: 1px solid #e5e7eb;
   border-radius: 12px;
 }
+.author a.name {
+  color: inherit;
+  text-decoration: none;
+}
+.author a.name:hover {
+  text-decoration: underline;
+}
+
+
 @media (min-width: 900px) {
   .authors { grid-template-columns: repeat(3, 1fr); }
 }
+
 
 /* フッター */
 footer { max-width: 980px; margin: 30px auto 80px; padding: 0 16px; color: var(--muted); }
@@ -170,6 +180,33 @@ footer { max-width: 980px; margin: 30px auto 80px; padding: 0 16px; color: var(-
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
   overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
 }
+
+/* 2列レイアウト（画像＋コメント） */
+.photos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;              /* カード間の余白 */
+}
+
+.photo {
+  background: var(--card, #f8f9fb);
+  border-radius: var(--radius, 16px);
+  box-shadow: var(--shadow, 0 10px 30px rgba(0,0,0,.08));
+  overflow: hidden;
+}
+
+.photo img {
+  width: 100%;
+  display: block;
+}
+
+.photo .description {
+  display: block;
+  padding: 10px 12px;
+  color: var(--muted, #6b7280);
+  font-size: 0.95rem;
+  line-height: 1.5;
+
 
 /* 地図の高さを大きくはっきり見えるようにする */
 #map {
