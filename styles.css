@@ -141,3 +141,11 @@ footer { max-width: 980px; margin: 30px auto 80px; padding: 0 16px; color: var(-
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
   overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
 }
+
+/* 地図の高さを大きくはっきり見えるようにする */
+#map {
+  width: 100%;
+  height: 500px; /* 以前の300pxから大きくしました */
+  margin-top: 10px;
+  border-radius: 12px;
+}
