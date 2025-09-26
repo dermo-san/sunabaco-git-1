@@ -5,8 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>行きたい！リスト – 観光スポット紹介</title>
   <meta name="description" content="観光スポットを写真と一言で紹介するシンプルな静的ページ" />
-  <link rel="stylesheet" href="styles.css">
+
+  <!-- 外部CSS（キャッシュ無効化用の ?v=1 付き） -->
+  <link rel="stylesheet" href="./styles.css?v=1">
+
+  <!-- 動作確認用の赤枠テスト -->
 </head>
+
+
 <body id="top">
   <!-- Header -->
   <header class="header">
@@ -38,7 +44,15 @@
       <div class="photos">
         <figure class="photo">
           <img src="assets/Sinsuke1.png" alt="温泉の写真1" />
+           <figcaption class="description">
+            島田紳助プロデュース！一泊30万円！</figcaption>
         </figure>
+        <figure class="photo">
+          <img src="assets/Sinsuke2.png" alt="温泉の写真2" />
+           <figcaption class="description">
+            滝の音を聞きながら入る極上の露天風呂。</figcaption>
+        </figure>
+
       </div>
     </section>
 
